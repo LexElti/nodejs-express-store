@@ -15,7 +15,7 @@ const toDate = date => {
     second: '2-digit'
   }).format(new Date(date))
 }
-
+ 
 document.querySelectorAll('.price').forEach(node => {
   node.textContent = toCurrency(node.textContent)
 })
